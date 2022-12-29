@@ -2,11 +2,15 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Modal</router-link> |
-      <router-link to="/list">List</router-link>
+      <router-link to="/list">List</router-link> |
+      <router-link to="/drawer">Drawer</router-link> |
+      <router-link to="/cards">Cards</router-link> |
+      <router-link to="/simple">Simple</router-link> |
+      <router-link to="/stagger">Stagger</router-link> |
+      <router-link to="/state">State</router-link> |
+      <router-link to="/timeline">Timeline</router-link>
     </div>
-    <transition name="slide-fade" mode="out-in">
-      <router-view />
-    </transition>
+    <router-view />
   </div>
 </template>
 
@@ -20,7 +24,6 @@
 }
 
 button {
-  border: none;
   height: 2.2em;
   margin: 0.5em;
   border-radius: 0.3em;
@@ -32,7 +35,7 @@ input {
   display: inline-block;
   box-sizing: border-box;
   width: 30%;
-  height: 2.2em;
+  height: 1.8em;
   padding: 0.5em;
   margin: 0.2em;
   font: 0.8em 'Avenir', Helvetica, sans-serif;
@@ -72,9 +75,6 @@ p {
 ul {
   list-style-type: none;
 }
-li {
-  margin: 10px;
-}
 
 /*** TRANSITIONS ***/
 .fade-enter {
@@ -111,10 +111,10 @@ li {
 }
 
 .slide-up-enter-active {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .slide-up-move {
-  transition: transform 0.7s ease-in-out;
+  transition: transform 0.8s ease-in;
 }
 </style>
