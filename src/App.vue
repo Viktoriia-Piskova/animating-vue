@@ -113,4 +113,8 @@ li {
 .slide-up-enter-active {
   transition: all 0.3s ease;
 }
+
+.slide-up-move {
+  transition: transform 0.7s ease-in-out;
+}
 </style>
